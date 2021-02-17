@@ -1,3 +1,3 @@
 import lastEvents from './lastEvents';
-
-export { lastEvents };
+import addEvents from "./addEvents";
+export { addEvents, lastEvents };

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {InfluxDB, FluxTableMetaData, flux} from '@influxdata/influxdb-client'
+import {InfluxDB } from '@influxdata/influxdb-client'
 import { INFLUX_CONFIG } from "../../env";
 
 const { url, token, org } = INFLUX_CONFIG

@@ -1,13 +1,17 @@
 import '../css/App.css';
-import { lastEvents } from '../../components/js/index'
+import { addEvents, lastEvents } from '../../components/js/index'
 function App() {
   const lastEventTimes = lastEvents({})
+  const addEventsForm = addEvents()
   return (
     <div className="App">
       <header className="App-header">
         <h1> Charley Dashboard </h1>
-        {lastEventTimes}
       </header>
+      <div className="App-body">
+      {lastEventTimes}
+      {addEventsForm}
+      </div>
     </div>
   );
 }
